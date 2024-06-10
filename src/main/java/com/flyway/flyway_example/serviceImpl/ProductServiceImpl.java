@@ -53,7 +53,7 @@ public class ProductServiceImpl implements ProductService {
     public String deleteProduct(int id) {
         Product checkProuctIfExists = productRepository.findById(id).orElseThrow(() -> new RuntimeException("id did not found bitch" + id));
         checkProuctIfExists.setActive(false);
-        return "deleted bitch";
+        return "deleted bitch!!";
     }
 
 
