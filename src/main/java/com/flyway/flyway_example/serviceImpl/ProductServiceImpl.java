@@ -37,6 +37,8 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> getActiveProducts() {
+        logger.info("--> getActiveProducts");
+        logger.info("<-- getActiveProducts");
         return productRepository.listAllActiveProducts();
     }
 
