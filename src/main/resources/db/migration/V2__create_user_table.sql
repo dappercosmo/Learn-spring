@@ -1,6 +1,7 @@
-CREATE TABLE Users(
+CREATE TABLE users(
 user_id INT AUTO_INCREMENT,
 email VARCHAR(20),
-password VARCHAR(20),
+password VARCHAR(100),
+role ENUM('SUPER_ADMIN','ADMIN','USER'),
 PRIMARY KEY (user_id)
 );

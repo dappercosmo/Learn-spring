@@ -15,6 +15,11 @@ public class ProductController {
 
     private final ProductService productService;
 
+    @GetMapping("/home")
+    ResponseEntity<String> home(){
+        return ResponseEntity.ok("home");
+    }
+
     @PostMapping
     ResponseEntity<Product> addProduct(@RequestBody Product product) {
         try{

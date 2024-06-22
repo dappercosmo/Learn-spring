@@ -21,7 +21,7 @@ public class ProductServiceImpl implements ProductService {
     Logger logger = LogManager.getLogger(ProductServiceImpl.class);
 
     @Override
-    public Product addProduct(final Product product) {
+    public Product addProduct(Product product) {
         logger.info("addProduct --->");
         logger.info("request payload {}", Mapper.mapJsonToString(product));
         Product addProduct = new Product();
